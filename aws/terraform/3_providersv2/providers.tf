@@ -26,7 +26,7 @@ resource "aws_s3_bucket" "my_bucket" {
 }
 
 resource "aws_s3_bucket" "my_bucket_eu_central_1" {
-  bucket = "my-bucket-afdab234423"
+  bucket = "my-bucket-afdab23442432432"
   # we need to specify the provider here
   provider = aws.eu_central_1
   tags = {
