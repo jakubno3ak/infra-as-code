@@ -17,7 +17,6 @@ provider "aws" {
   alias = eu_central_1
 }
 
-
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "my-bucket-afdab234423"
   tags = {
