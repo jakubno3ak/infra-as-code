@@ -1,10 +1,3 @@
-### VPC module
-
-It allows to create vpc and private/public subnets easily.
-
-Example:
-
-```hcl
 module "networking" {
   source = "./modules/networking"
 
@@ -22,11 +15,8 @@ module "networking" {
     subnet_2 = {
       cidr_block = "10.0.1.0/24"
       az         = "eu-west-1b"
+      # Public subnets are indicated by setting the "public" option to true.
       public     = true
     }
   }
 }
-```
-
-### Inspired by:
-https://www.udemy.com/course/mastering-terraform-beginner-to-expert/
