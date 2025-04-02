@@ -1,11 +1,11 @@
 terraform {
-    required_version = "~> 1.0"
-    required_providers {
-      aws = {
-        source = "hashicorp/aws"
-        version = "~> 5.0"
-      }
+  required_version = "~> 1.0"
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
     }
+  }
 }
 
 provider "aws" {
@@ -14,7 +14,7 @@ provider "aws" {
 
 provider "aws" {
   region = "eu-central-1"
-  alias = eu_central_1
+  alias  = eu_central_1
 }
 
 resource "aws_s3_bucket" "my_bucket" {

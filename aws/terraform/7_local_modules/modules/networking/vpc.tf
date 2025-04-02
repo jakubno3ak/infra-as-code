@@ -28,7 +28,8 @@ resource "aws_subnet" "this" {
   availability_zone = each.value.az
 
   tags = {
-    Name = each.key
+    Name   = each.key
+    Access = each.value.public ? "Public" : "Private"
   }
 
   lifecycle {

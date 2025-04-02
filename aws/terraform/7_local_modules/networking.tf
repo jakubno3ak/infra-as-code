@@ -17,15 +17,5 @@ module "networking" {
       az         = "eu-west-1b"
       public     = true
     }
-    subnet_3 = {
-      cidr_block = "10.0.2.0/24"
-      az         = "eu-west-1b"
-      public     = true
-    }
-    subnet_4 = {
-      cidr_block = "10.0.3.0/24"
-      az         = "eu-west-1b"
-      public     = false
-    }
   }
 }

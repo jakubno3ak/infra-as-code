@@ -64,7 +64,7 @@ output "azs" {
   value = data.aws_availability_zones.aws_azs.names
 }
 
-output "iam_policy"  {
+output "iam_policy" {
   value = data.aws_iam_policy_document.static_website
 }
 
