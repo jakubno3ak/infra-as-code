@@ -28,3 +28,8 @@ resource "aws_lambda_function" "this" {
     log_group             = aws_cloudwatch_log_group.lambda_log_group.name
   }
 }
+
+resource "aws_lambda_function_url" "this" {
+  authorization_type = "AWS_IAM"
+  function_name      = aws_lambda_function.this.function_name
+}
